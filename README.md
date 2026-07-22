@@ -28,9 +28,10 @@ brew upgrade --cask JessePeplinski/tap/portdeck@beta
 ## Maintainer release checklist
 
 1. Publish and verify the new signed, notarized PortDeck GitHub Release.
-2. Update `version` and `sha256` in `Casks/portdeck@beta.rb`.
-3. Run `brew style`, `brew audit`, and a clean install/uninstall test.
-4. Commit and push the tested cask update.
+2. Run the `Update PortDeck cask` workflow for the exact beta version and confirm it succeeds.
+3. Confirm the cask commit reached `main`, then run a clean public install/uninstall smoke test.
+
+The workflow also checks for a newer published PortDeck beta every six hours. It accepts only a non-draft prerelease with both expected arm64 assets, requires the GitHub asset digest to match the published SHA-256 sidecar, audits the updated cask, and commits only after those checks pass.
 
 See the [PortDeck repository](https://github.com/JessePeplinski/portdeck) for
 source, release notes, and manual downloads.
