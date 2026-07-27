@@ -1,6 +1,6 @@
 cask "portdeck@beta" do
-  version "0.1.0-beta.8"
-  sha256 "b67231db79e5f04b0b5ffad3b8013d452e8a9ba09235bf852f314cbcc0dfea3f"
+  version "0.1.0-beta.9"
+  sha256 "0cfdfbc3dc5fd8ce77680e0f2123cdafba66a26ea1128383fedcce284595fbc6"
 
   url "https://github.com/JessePeplinski/portdeck/releases/download/v#{version}/PortDeck-#{version}-macos-arm64.zip",
       verified: "github.com/JessePeplinski/portdeck/"
