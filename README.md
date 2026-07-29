@@ -18,8 +18,8 @@ Launch PortDeck from Applications or run:
 open -a PortDeck
 ```
 
-Homebrew will include PortDeck when checking for cask upgrades. You can also
-upgrade it explicitly:
+PortDeck checks its signed Sparkle beta feed for updates. You can also upgrade
+it explicitly through Homebrew:
 
 ```bash
 brew upgrade --cask JessePeplinski/tap/portdeck@beta

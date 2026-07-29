@@ -8,6 +8,7 @@ cask "portdeck@beta" do
   desc "Menu bar command center for local development services and deployments"
   homepage "https://portdeck.vercel.app/"
 
+  auto_updates true
   depends_on arch: :arm64
   depends_on macos: :sonoma
 
